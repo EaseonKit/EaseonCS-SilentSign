@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "easeon-cs-silentsign",
+	"version": "${version}",
+	"name": "EaseonCS - SilentSign",
+	"description": "Silently places signs without opening the sign edit screen.",
+	"authors": [
+		"Teron"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/easeon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+        "client": [
+          "com.easeon.cs.silentsign.EaseonClient"
+        ]
+    },
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

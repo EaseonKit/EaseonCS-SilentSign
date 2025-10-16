@@ -1,4 +1,3 @@
-// Easeon.java
 package com.easeon.cs.silentsign;
 
 import net.fabricmc.api.ClientModInitializer;

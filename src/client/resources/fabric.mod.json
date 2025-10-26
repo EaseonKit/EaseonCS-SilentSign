@@ -1,27 +1,32 @@
 {
-	"schemaVersion": 1,
-	"id": "easeon-cs-silentsign",
-	"version": "${version}",
-	"name": "EaseonCS - SilentSign",
-	"description": "Silently places signs without opening the sign edit screen.",
-	"authors": [
-		"Teron"
-	],
-	"license": "CC0-1.0",
-	"icon": "assets/easeon/icon.png",
-	"environment": "*",
-	"entrypoints": {
-        "client": [
-          "com.easeon.cs.silentsign.EaseonClient"
-        ]
-    },
-	"depends": {
-		"fabricloader": ">=0.17.2",
-		"minecraft": "~1.21.10",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "easeon-cs-${mod_package}",
+  "version": "${version}",
+  "name": "EaseonCS - ${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "Teron"
+  ],
+  "contact": {
+    "homepage": "https://github.com/EaseonKit?tab=repositories&q=&type=&language=&sort=name",
+    "sources": "https://github.com/EaseonKit/EaseonSS-${mod_name}",
+    "issues": "https://github.com/EaseonKit/EaseonSS-${mod_name}/issues"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/easeon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.easeon.cs.${mod_package}.Easeon"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.9",
+    "java": ">=21",
+    "easeon-cs-core": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
